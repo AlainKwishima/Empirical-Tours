@@ -1,0 +1,35 @@
+.tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+  padding: 0 22px;
+  font-family: var(--font-satisfy);
+  font-size: 17px;
+  letter-spacing: 0.51px;
+}
+
+.tag > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag span {
+  position: relative;
+  z-index: 1;
+}
+
+.green span {
+  color: var(--green);
+}
+
+.orange span {
+  color: var(--orange);
+}
+
+
+

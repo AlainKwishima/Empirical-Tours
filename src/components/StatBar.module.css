@@ -1,0 +1,50 @@
+.bar {
+  width: 100%;
+  border: 1px solid #100c081a;
+  height: 135px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 32px;
+  gap: 0 12px;
+}
+
+.stat {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.value {
+  font-family: var(--font-rubik);
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 27px;
+  color: var(--black);
+}
+
+.label {
+  font-family: var(--font-jost);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gray-600);
+}
+
+.divider {
+  position: absolute;
+  right: -6px;
+  height: 41px;
+  width: 1px;
+  background: #13141a28;
+}
+
+
+

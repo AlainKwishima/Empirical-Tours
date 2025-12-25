@@ -1,0 +1,123 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 326px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.list {
+  display: grid;
+  gap: 16px;
+}
+
+.tab {
+  position: relative;
+  height: 60px;
+  border-radius: 200px;
+  border: 1px solid #eeeeee99;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  padding-right: 20px;
+  gap: 12px;
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  color: var(--black);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px #0000000f;
+}
+
+.tabIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+
+.tabIcon img {
+  width: 33px;
+  height: 33px;
+}
+
+.active {
+  color: var(--white);
+}
+
+.panel {
+  background: var(--white);
+  padding: 12px 12px 12px 12px;
+}
+
+.panel h3 {
+  margin: 0 0 16px;
+  font-family: var(--font-rubik);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 42px;
+}
+
+.desc {
+  margin: 0 0 16px;
+  color: var(--gray-600);
+  font-family: var(--font-jost);
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  line-height: 30px;
+}
+
+.bullets {
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px 24px;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 18px;
+  font-family: var(--font-jost);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: 0.51px;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.watch {
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  color: var(--black);
+}
+
+
+

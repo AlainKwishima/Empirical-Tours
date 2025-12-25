@@ -1,0 +1,42 @@
+.btn {
+  font-family: var(--font-rubik);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.full {
+  width: 100%;
+}
+
+.primary {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green-dark);
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-btn);
+}
+
+.outline {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--green-dark);
+}
+
+.pill {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--green-dark);
+  border-radius: 35px;
+}
+
+
+

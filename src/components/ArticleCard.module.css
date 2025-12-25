@@ -1,0 +1,147 @@
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: var(--white);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.media {
+  position: relative;
+  height: 324px;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.date {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 65px;
+  height: 65px;
+  border-radius: 32.5px;
+  background: var(--green);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-rubik);
+  font-weight: 600;
+  letter-spacing: 0.22px;
+}
+
+.day {
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.month {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.body {
+  padding: 28px 30px 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-jost);
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  color: #100c0880;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.cat {
+  position: relative;
+  padding-left: 14px;
+}
+
+.cat::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: var(--green);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+h4 {
+  margin: 0;
+  font-family: var(--font-rubik);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 32.2px;
+  color: var(--black);
+  letter-spacing: 0.23px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--green);
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.linkIcon {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #63ab454d;
+  border-radius: 11px;
+  position: relative;
+}
+
+.linkIcon::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  border: solid var(--green);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+
+.read {
+  font-family: var(--font-rubik);
+  font-size: 12px;
+  font-weight: 500;
+  color: #100c0880;
+  letter-spacing: 0.24px;
+}
+
+
+

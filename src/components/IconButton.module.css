@@ -1,0 +1,15 @@
+.iconBtn {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: none;
+  background: var(--white);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px #00000014;
+  padding: 0;
+}
+
+
+
