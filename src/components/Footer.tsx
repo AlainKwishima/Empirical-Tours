@@ -7,7 +7,7 @@ export const Footer: React.FC = () => (
     <div className={styles.container}>
       <div className={styles.brandCol}>
         <div className={styles.brandRow}>
-          <img src="/assets/about/logo.svg" alt="TripNest logo" className={styles.logo} />
+          <img src="/assets/about/logo.svg" alt="Empirical Tours logo" className={styles.logo} />
         </div>
         <h3>Want to Take Tour Packages?</h3>
         <button className={styles.bookBtn}>Book A Tour</button>
@@ -78,9 +78,9 @@ export const Footer: React.FC = () => (
       </div>
       <div className={styles.copyRow}>
         <span>
-          ©Copyright 2024 BlackRise Theme | Design By @Shawon3{" "}
+          ©Copyright 2024 Empirical Tours | Design By @Shawon3{" "}
           <a href="#" className={styles.brandLink}>
-            BlackRise
+            Empirical
           </a>
         </span>
       </div>

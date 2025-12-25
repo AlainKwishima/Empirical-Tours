@@ -41,7 +41,7 @@ const Footer: React.FC = () => (
     <div className={styles.footerOverlay} />
     <div className={styles.footerContainer}>
       <div className={styles.footerBrand}>
-        <img src="/assets/about/logo.svg" alt="TripNest logo" className={styles.footerLogo} />
+        <img src="/assets/about/logo.svg" alt="Empirical Tours logo" className={styles.footerLogo} />
         <h3>Want to Take Tour Packages?</h3>
         <Button className={styles.footerCta}>Book A Tour</Button>
       </div>
@@ -97,9 +97,9 @@ const Footer: React.FC = () => (
         <a className={styles.socialIcon} href="#" aria-label="Instagram" />
       </div>
       <div className={styles.copy}>
-        ©Copyright 2024 BlackRise Theme | Design By @Shawon3
+        ©Copyright 2024 Empirical Tours | Design By @Shawon3
         <a className={styles.copyBrand} href="#">
-          BlackRise
+          Empirical
         </a>
       </div>
       <div className={styles.legalRow}>
@@ -127,7 +127,7 @@ export const DestinationsPage: React.FC<{ currentPage?: string; onNavigate?: (pa
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.navLeft}>
-          <img src="/assets/about/logo.svg" alt="TripNest logo" className={styles.logo} />
+          <img src="/assets/about/logo.svg" alt="Empirical Tours logo" className={styles.logo} />
         </div>
         <nav className={styles.navMenu}>
           {["Home", "About", "Tours", "Destination", "Pages", "Contact"].map((item) => (

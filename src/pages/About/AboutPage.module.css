@@ -566,16 +566,19 @@
 
 .activitiesInner {
   display: grid;
-  grid-template-columns: 800px 1fr;
+  grid-template-columns: minmax(300px, 800px) 1fr;
   gap: 32px;
   align-items: start;
 }
 
 .activitiesImage {
+  min-height: 400px;
   height: 743px;
+  max-height: 743px;
   background: url("/assets/about/activities-left.jpg") center/cover no-repeat;
   border-radius: 0;
   position: relative;
+  width: 100%;
 }
 
 .activitiesImage::after {
@@ -657,7 +660,7 @@
   gap: 18px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .header {
     padding: 0 24px;
     grid-template-columns: 1fr;
@@ -675,6 +678,11 @@
   }
   .activitiesInner {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .activitiesImage {
+    height: 500px;
+    max-height: 500px;
   }
   .planeWrap {
     position: relative;
@@ -694,8 +702,16 @@
   .package {
     grid-template-columns: 1fr;
   }
+  .activitiesInner {
+    gap: 20px;
+  }
   .activitiesImage {
     height: 300px;
+    min-height: 300px;
+    max-height: 400px;
+  }
+  .activitiesContent {
+    padding: 16px 0;
   }
   .guidesGrid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -6,6 +6,7 @@ import { StatBar } from "../../components/StatBar";
 import { ActivityTabs } from "../../components/ActivityTabs";
 import { ArticleCard } from "../../components/ArticleCard";
 import { IconButton } from "../../components/IconButton";
+import { Footer } from "../../components/Footer";
 
 const heroBreadcrumb = ["Home", "About"];
 
@@ -140,7 +141,7 @@ export const AboutPage: React.FC<{ currentPage?: string; onNavigate?: (page: str
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.navLeft}>
-          <img src="/assets/about/logo.svg" alt="TripNest logo" className={styles.logo} />
+          <img src="/assets/about/logo.svg" alt="Empirical Tours logo" className={styles.logo} />
         </div>
         <nav className={styles.navMenu}>
           {["Home", "About", "Tours", "Destination", "Pages", "Contact"].map((item, idx) => (
@@ -334,7 +335,7 @@ export const AboutPage: React.FC<{ currentPage?: string; onNavigate?: (page: str
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
             <SectionTag text="What We Do" />
-            <h2>Our Particular Activitiies</h2>
+            <h2>Our Particular Activities</h2>
           </div>
           <div className={styles.activitiesInner}>
             <div className={styles.activitiesImage} />
@@ -389,6 +390,7 @@ export const AboutPage: React.FC<{ currentPage?: string; onNavigate?: (page: str
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

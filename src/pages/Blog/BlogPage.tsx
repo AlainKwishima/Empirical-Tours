@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./BlogPage.module.css";
 import { Button } from "../../components/Button";
+import { Footer } from "../../components/Footer";
 
 type Post = {
   image: string;
@@ -192,7 +193,7 @@ export const BlogPage: React.FC<{ currentPage?: string; onNavigate?: (page: stri
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.navLeft}>
-          <img src="/assets/about/logo.svg" alt="TripNest logo" className={styles.logo} />
+          <img src="/assets/about/logo.svg" alt="Empirical Tours logo" className={styles.logo} />
         </div>
         <nav className={styles.navMenu}>
           {["Home", "About", "Tours", "Destination", "Pages", "Contact"].map((item) => (
@@ -280,6 +281,7 @@ export const BlogPage: React.FC<{ currentPage?: string; onNavigate?: (page: stri
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
