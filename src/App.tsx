@@ -11,8 +11,8 @@ type PageKey = "about" | "tours" | "destinations" | "blog" | "faq" | "contact";
 const App: React.FC = () => {
   const [page, setPage] = React.useState<PageKey>("about");
 
-  const handleNavigate = (next: PageKey) => {
-    setPage(next);
+  const handleNavigate = (next: string) => {
+    setPage(next as PageKey);
   };
 
   if (page === "about") {
